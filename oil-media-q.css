@@ -1,0 +1,27 @@
+@media screen and (max-width: 1400px) {
+    }
+    #card-container{
+        flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        width: auto;
+        padding: 10px;
+        margin: 20px; 
+    }
+}

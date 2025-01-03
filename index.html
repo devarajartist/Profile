@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="assets/paint-palette.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Devaraj Artist</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Devaraj Artist</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/new.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Devaraj</h1>
+        <p class="section__text__p2">Freelance Artist</p>
+        <!-- <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div> -->
+        <div id="socials-container">
+          <img
+            src="./assets/social.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/devaraj.paintings/'"
+          />
+          <img
+            src="./assets/whatsapp.png"
+            alt="My Whatsapp profile"
+            class="icon"
+            onclick="location.href='https://wa.me/6379340034/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/deva.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/medal.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ years <br />Freelance Artist</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/graduation-cap.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MFA Master Of Fine Arts</p>
+              <!-- <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p> -->
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate freelance artist with a deep love for oil, acrylic, and 
+              watercolor. I strive to capture emotions,
+               stories, and experiences on canvas. My creative journey is driven by 
+               a desire to explore nature, the human condition, urban landscapes, etc. 
+               I’m dedicated to delivering artwork that is both thought provoking and 
+               visually captivating. As a freelancer, I work closely with clients to
+                understand their vision and bring their ideas to life through custom artwork.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Oil Painting</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>landscape</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Portrait</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Realism</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Impressionism</h3>
+                  <p>Experienced</p>
+                </div>
+              </article> -->
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Acrylic Painting</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>landscape</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Portrait</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Realism</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/verified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Impressionism</h3>
+                  <p>Experienced</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Painting-1.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Oil Paintings</h2>
+            <div class="btn-container">
+
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='oil-paintings.html'"
+              >
+                View Paintings
+              </button> -->
+              <a class="btn btn-color-2 project-btn" href="oil-paintings.html" style="text-decoration:none;">View Paintings</a>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Painting-2.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Acrylic Paintings</h2>
+            <div class="btn-container">
+
+              <a class="btn btn-color-2 project-btn" href="acrylic-paintings.html" style="text-decoration:none;">View Paintings</a>
+              <!-- <a href="acrylic-paintings.html">llll</a> -->
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/acrylic-paintings.html'"
+              >
+                View Paintings
+              </button> -->
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/clients.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">700+ Satisfied Clients</h2>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="client.html" style="text-decoration:none;">View Clients</a>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/client.html'"
+              >
+                View Clients
+              </button> -->
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <!-- <p><a href="examplemail@gmail.com">deva2arty@gmail.com</a></p> -->
+          <p><div>devaraj20002@gmail.com</div></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/social.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/devaraj.paintings/">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Devaraj. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
