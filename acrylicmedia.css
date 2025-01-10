@@ -1,4 +1,32 @@
+@media screen and (max-width: 2560px) { 
+    .acrylic-title {
+        font-weight: bold;
+        color: #0071e3;
+        text-align: center;
+    }
+    .logo{
+        display: none;
+    }
+    /* .nav-links{
+        display: none;
+    } */
+     #desktop-nav{
+        display: none;
+     }
+     .card{
+        width: 20%;
+     }
+    }
 @media screen and (max-width: 1400px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: none;
+    }
+    .card{
+        width: 20%;
+     }
 }
 #card-container{
     flex-wrap: wrap;
@@ -11,11 +39,25 @@
     display: none;
 }
 #hamburger-nav {
-    display: flex;
+    display: none;
 }
+.acrylic-title{
+    font-weight: bold;
+    color: #0071e3;
+    text-align: center;
+}
+.card{
+    width: 30%;
+ }
 }
 
 @media screen and (max-width: 700px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: none;
+    }
 .card-container{
     flex-direction: column;
 }
@@ -23,5 +65,10 @@
     width: auto;
     padding: 10px;
     margin: 20px; 
+}
+.acrylic-title{
+    font-weight: bold;
+    color: #0071e3;
+    text-align: center;
 }
 }

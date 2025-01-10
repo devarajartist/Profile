@@ -1,4 +1,37 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2560px) {
+    .oil-title {
+        font-weight: bold;
+        color: #0071e3;
+        text-align: center;
+    }
+    .logo{
+        display: none;
+    }
+    /* .nav-links{
+        display: none;
+    } */
+     #desktop-nav{
+        display: none;
+     }
+}
+@media screen and (max-width: 1440px) {
+    .oil-title {
+        font-weight: bold;
+        color: #0071e3;
+        text-align: center;
+    }
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .card{
+        width: 20%;
+    }
+    #desktop-nav {
+        display: none;
+    }
 }
 #card-container{
     flex-wrap: wrap;
@@ -13,6 +46,17 @@
 #hamburger-nav {
     display: flex;
 }
+#hamburger-nav {
+    display: none;
+}
+.card{
+    width: 40%;
+}
+.oil-title {
+    font-weight: bold;
+    color: #0071e3;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -22,6 +66,17 @@
 .card{
     width: auto;
     padding: 10px;
-    margin: 20px; 
+    margin: 10px 20px 0px 20px ;
+}
+.logo {
+    display: none;
+}
+#hamburger-nav {
+    display: none;
+}
+.oil-title {
+    font-weight: bold;
+    color: #0071e3;
+    text-align: center;
 }
 }
