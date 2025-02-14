@@ -8,16 +8,19 @@
     <link rel="shortcut icon" href="assets/paint-palette.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="nav-brush">
+      <div class="nav-brush" data-aos="fade-right" data-aos-delay="250" >
         <div class="logo">Paintings</div>
         <div > <img id="logo-logo"  src="assets/art-and-design.png" alt=""></div>
       </div>
       
       <div>
-        <ul class="nav-links">
+        <ul class="nav-links" data-aos="fade-left" data-aos-delay="250">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -38,7 +41,7 @@
           <span></span>
           <span></span> -->
         </div>
-        <div class="menu-links">
+        <div class="menu-links" data-aos="fade-down">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -47,13 +50,13 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/new.png" alt="profile picture" />
+      <div class="section__pic-container" data-aos="fade-down" data-aos-delay="450">
+        <img src="./assets/new.png" alt="profile picture"/>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Devaraj</h1>
-        <p class="section__text__p2">Freelance Artist</p>
+      <div class="section__text" >
+        <p class="section__text__p1" data-aos="fade-down" data-aos-delay="100">Hello, I'm</p>
+        <h1 class="title" data-aos="fade-down" data-aos-delay="200">Devaraj</h1>
+        <p class="section__text__p2" data-aos="fade-down" data-aos-delay="300">Freelance Artist</p>
         <!-- <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -65,14 +68,16 @@
             Contact Info
           </button>
         </div> -->
-        <div id="socials-container">
+        <div id="socials-container" >
           <img
+          data-aos="fade-up" data-aos-delay="250"
             src="./assets/social.png"
             alt="My Instagram profile"
             class="icon"
             onclick="location.href='https://www.instagram.com/devaraj.paintings/'" 
           />
           <img
+          data-aos="fade-up" data-aos-delay="250"
             src="./assets/whatsapp.png"
             alt="My Whatsapp profile"
             class="icon"
@@ -81,11 +86,11 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+    <section id="about" >
+      <p class="section__text__p1"data-aos="fade-down" data-aos-delay="350">Get To Know More</p>
+      <h1 class="title" data-aos="fade-down" data-aos-delay="400">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container" data-aos="fade-up" data-aos-delay="450">
           <img
             src="./assets/deva.png"
             alt="Profile picture"
@@ -93,7 +98,7 @@
           />
         </div>
         <div class="about-details-container">
-          <div class="about-containers">
+          <div class="about-containers" data-aos="fade-right" data-aos-delay="150">
             <div class="details-container">
               <img
                 src="./assets/medal.png"
@@ -103,7 +108,7 @@
               <h3>Experience</h3>
               <p>6+ years <br />Freelance Artist</p>
             </div>
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-left" data-aos-delay="50">
               <img
                 src="./assets/graduation-cap.png"
                 alt="Education icon"
@@ -114,7 +119,7 @@
               <!-- <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p> -->
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-container" data-aos="fade-up" data-aos-delay="50">
             <p>
               I am a passionate freelance artist with a deep love for oil, acrylic, and 
               watercolor. I strive to capture emotions,
@@ -135,11 +140,11 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1" data-aos="fade-down" data-aos-delay="150">Explore My</p>
+      <h1 class="title" data-aos="fade-down" data-aos-delay="250">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container" data-aos="fade-right" data-aos-delay="50">
             <h2 class="experience-sub-title">Oil Painting</h2>
             <div class="article-container">
               <article>
@@ -177,7 +182,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container"data-aos="fade-left" data-aos-delay="50">
             <h2 class="experience-sub-title">Acrylic Painting</h2>
             <div class="article-container">
               <article>
@@ -235,12 +240,12 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+    <section id="projects" >
+      <p class="section__text__p1"data-aos="fade-down" data-aos-delay="200">Browse My Recent</p>
+      <h1 class="title"data-aos="fade-down" data-aos-delay="50">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="50">
             <div class="article-container">
               <img
                 src="./assets/Painting-1.JPG"
@@ -270,7 +275,7 @@
               </button> -->
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="150">
             <div class="article-container">
               <img
                 src="./assets/Painting-2.JPG"
@@ -301,7 +306,7 @@
               </button> -->
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
             <div class="article-container">
               <img
                 src="./assets/clients.png"
@@ -370,9 +375,9 @@
 
     
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <p class="section__text__p1" data-aos="fade-down" data-aos-delay="50">Get in Touch</p>
+      <h1 class="title" data-aos="fade-down" data-aos-delay="100">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="fade-up" data-aos-delay="150">
         <div class="contact-info-container">
           <img
           style="cursor: pointer;"
@@ -428,5 +433,14 @@
       <!-- <p>Copyright &#169; 2025 Devaraj. All Rights Reserved.</p> -->
     </footer>
     <script src="script.js"></script>
+
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: false,
+      });
+    </script>
   </body>
 </html>
