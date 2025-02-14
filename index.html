@@ -11,7 +11,11 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Devaraj Artist</div>
+      <div class="nav-brush">
+        <div class="logo">Paintings</div>
+        <div > <img id="logo-logo"  src="assets/art-and-design.png" alt=""></div>
+      </div>
+      
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -22,12 +26,17 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Devaraj Artist</div>
+      <div class="nav-brush">
+        <div class="logo">Paintings</div>
+        <div > <img id="logo-logo"  src="assets/art-and-design.png" alt=""></div>
+      </div>
+      <!-- <div class="logo">Paintings</div> -->
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
+          <img src="assets/application (1).png" alt="menu">
+          <!-- <span></span>
           <span></span>
-          <span></span>
-          <span></span>
+          <span></span> -->
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -369,27 +378,32 @@
             src="./assets/mail.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
+            onclick="location.href= 'mailto:devaraj20002@gmail.com'" 
           />
-          <p><div>devaraj20002@gmail.com</div></p>
+          <p><a href= "mailto:devaraj20002@gmail.com" class="insta">Send Email</a></p>
         </div>
         <div class="contact-info-container" style="color:#0071e3">
           <img
+          onclick="location.href='https://www.instagram.com/devaraj.paintings/'"
             src="./assets/social.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.instagram.com/devaraj.paintings/"
+          <p><a class="insta" href="https://www.instagram.com/devaraj.paintings/"
              style="-webkit-tap-highlight-color: transparent !important;"
              >Instagram</a></p>
             </div>
 
         <div class="contact-info-container">
           <img
+          onclick="location.href='https://wa.me/6379340034/?text=hi'"
+          href="https://www.instagram.com/devaraj.paintings/"
             src="./assets/whatsapp.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a alt="Whatsapp" onclick="location.href='https://wa.me/6379340034/?text=hi'"
+          <p><a class="insta"
+            alt="Whatsapp" onclick="location.href='https://wa.me/6379340034/?text=hi'"
              style="text-decoration:none; -webkit-tap-highlight-color: transparent !important; 
              cursor: pointer;"
              >Whatsapp</a></p>
@@ -401,14 +415,14 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" style="color:#ffffff">About</a></li>
+            <li><a href="#experience" style="color:#ffffff">Experience</a></li>
+            <li><a href="#projects" style="color:#ffffff">Projects</a></li>
+            <li><a href="#contact" style="color:#ffffff">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Devaraj. All Rights Reserved.</p>
+      <!-- <p>Copyright &#169; 2025 Devaraj. All Rights Reserved.</p> -->
     </footer>
     <script src="script.js"></script>
   </body>
