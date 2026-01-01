@@ -47,7 +47,7 @@ nav {
 }
 
 a {
-  color: #000000;
+  color: #0071e3;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -463,7 +463,7 @@ article .icon {
   border-radius: 1rem;
   /* border: rgb(53, 53, 53) 0.1rem solid; */
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -513,3 +513,38 @@ footer {
   text-align: center;
   margin-bottom: 2rem;
 } */
+
+
+/* glitter-text effect */
+.glitter-text:hover {
+  /* font-size: 80px; */
+  /* font-weight: bold; */
+  /* 1. Apply a linear gradient background */
+  background: linear-gradient(
+    90deg,
+    #d373eb 0%,
+    #ffcc00 25%,
+    #ff00cc 50%,
+    #00ccff 75%,
+    #59c005 100%
+  );
+  /* Optional: Adjust background size to control the gradient spread */
+  background-size: 200% auto;
+
+  /* 2. Clip the background to the text shape */
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+
+  /* 3. Make the text color transparent so the background shows through */
+  color: transparent;
+
+  /* 4. Animate the background position to create the glitter/shine effect */
+  animation: glitter 3s linear infinite;
+}
+
+@keyframes glitter {
+  to {
+    /* Move the background position from left to right */
+    background-position: -200% center;
+  }
+}
